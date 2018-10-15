@@ -6,18 +6,35 @@ body
 
 ul > li
 {
-    padding: 10px;
+    padding: 0;
+    margin:0;
     display: inline;
+    border-right: 1px solid white;
+}
+
+ul > li:first-child
+{
+    border-left: 1px solid white;
+}
+
+ul > li > a{
+    text-decoration:none;
+    padding: 15px;
     color:#ffffff;
     font-size:24px;
 }
 
+
+
 ul > li:hover > a
 {
     padding: 10px;
-    display: inline;
-    color:#ffffff;
+    margin: 5px;
+    background:#ffffff;
+    color:#000000;
     font-size:24px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 ul
@@ -29,7 +46,7 @@ ul
 }
 
 
-#pojemnik
+#container
 {
     width: 1000px;
     margin-left: auto;
@@ -40,13 +57,13 @@ ul
     
 }
 
-#nawigacja
+#navigation
 {
-    border: 2px solid black;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
     background: black;
+    padding: 15px;
 }
 
 #logo
@@ -57,7 +74,7 @@ ul
     border-radius: 15px;
 }
 
-.zawartosc
+.content
 {
     float:left;
     width: 700px;
@@ -66,15 +83,76 @@ ul
     padding: 25px;
 }
 
+#left
+{
+    float: left;
+    min-width: 75%;
+    max-width: 75%;
+    padding: 25px;
+    margin:0 auto;
+}
+
 #right
 {
     float: left;
-    width: 200px;
+    min-width: 25%;
+    max-width: 25%;
     padding: 25px;
 }
 
-a{
-    text-decoration:none;
-    color:white;
+#footer
+{
+    width: 100%;
+    background:black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align:center;
+    font-size: 24px;
 }
 
+.clean
+{
+    clear: both;
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: black;
+}
+legend 
+{
+    width:30%;
+    text-align: center;
+}
+
+.btn
+{
+    width: 150px;
+    height: 75px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.btn-danger
+{
+    position: relative;
+    bottom: 10px;
+    left:40%;
+}
+
+.btn-success
+{
+    position: relative;
+    bottom: 10px;
+    left:13%;
+}

@@ -2,32 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
+    <title>Kontakt</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleContact.css">
 </head>
 <body>
-    <div class="container">
-        <div id="nawigacja">
+    <div id="container">
+        <div id="navigation">
             <nav>
                 <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li>Przycisk</li>
-                    <li>Przycisk</li>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="index.html">Strona Główna</a></li>
                 </ul>
             </nav>
         </div>
         <div id="left">
             <form>
+                <fieldset>
+                <legend>Uzupełnij Dane:</legend>
                 <div class="form-group">
-                    <label for="imie">Imie:</label>
-                    <input type="text" class="form-control" id="imie" placeholder="Podaj Imie">
+                    <label for="name">Imie:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Podaj Imie">
                 </div>
                 <div class="form-group">
-                    <label for="nazwisko">Nazwisko:</label>
-                    <input type="text" class="form-control" id="nazwisko" placeholder="Podaj Nazwisko">
+                    <label for="surname">Nazwisko:</label>
+                    <input type="text" class="form-control" id="surname" placeholder="Podaj Nazwisko">
                 </div>
                 <div class="form-group">
                     <label for="e-mail">E-Mail:</label>
@@ -46,24 +48,23 @@
                     <label class="form-check-label" for="inlineRadio2">Kobieta</label>
                 </div>
                 <div class="form-group">
-                    <label for="opis">Opis</label>
-                    <textarea class="form-control" id="opis" rows="3"></textarea>
+                    <label for="description">Opis</label>
+                    <textarea class="form-control" id="description" rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="wiek">Wiek:</label>
-                    <input type="number" class="form-control" id="wiek" value="18">
+                    <label for="age">Wiek:</label>
+                    <input type="number" class="form-control" id="age" value="18">
                 </div>
                 <div class="form-group col-4">
-                    <label for="StanCywilny">StanCyfilny</label>
-                    <select id="StanCywilny" class="form-control">
+                    <label for="CivilStatus">StanCywilny</label>
+                    <select id="CivilStatus" class="form-control">
                         <option selected>Panna/Kawaler</option>
                         <option>Żonaty/Mężata</option>
-
                     </select>
                 </div>
-                <button type="reset" class="btn btn-danger">Wyczyść</button>
                 <button type="submit" class="btn btn-success">Wyślij</button>
-
+                <button type="reset" class="btn btn-danger">Wyczyść</button>
+                </fieldset>
             </form>
         </div>
         <div id="right">
@@ -71,7 +72,12 @@
 
             </aside>
         </div>
-        <div style="clear: both;"
+        <div class="clean"></div>
+        <footer>
+            <div id="footer">
+                Designed by Mateusz Korzeniowski &copy 2018
+            </div>
+        </footer>
     </div>
 </body>
 </html>
