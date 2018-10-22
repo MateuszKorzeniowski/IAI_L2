@@ -158,3 +158,39 @@ legend
     bottom: 10px;
     left:13%;
 }
+
+p
+{
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.map-container
+{
+    background: white;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+iframe
+{
+    width: 100%;
+    pading:20px 20px;
+}
+
+#map
+{
+    width: 100%;
+}
+
+ul.legend >li
+{
+    display: block;
+    text-align: left;
+}
+
+ul.list > li
+{
+    padding:10px;
+}
