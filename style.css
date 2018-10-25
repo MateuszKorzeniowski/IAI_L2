@@ -4,7 +4,7 @@ body
     color: #red;
 }
 
-ul > li
+nav > ul > li
 {
     padding: 0;
     margin:0;
@@ -13,22 +13,25 @@ ul > li
 
 }
 
-ul > li:first-child
+nav > ul > li:first-child
 {
     border-left: 1px solid white;
 }
 
-ul > li > a{
+nav > ul > li > a{
     text-decoration:none;
     padding: 15px;
     color:#ffffff;
     font-size:24px;
+    padding: 10px;
+    margin: 5px;
     transition: all 1s;
+    border-radius: 10px;
 }
 
 
 
-ul > li:hover > a
+nav > ul > li:hover > a
 {
     padding: 10px;
     margin: 5px;
@@ -39,7 +42,7 @@ ul > li:hover > a
     text-decoration: none;
 }
 
-ul
+nav > ul
 {
     margin: 0;
     padding: 0;
@@ -48,7 +51,7 @@ ul
 }
 
 
-#container
+.container
 {
     width: 1000px;
     margin-left: auto;
@@ -59,7 +62,7 @@ ul
     
 }
 
-#navigation
+nav
 {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -68,15 +71,16 @@ ul
     padding: 15px;
 }
 
-#logo
+header
 {
     background: azure;
     width: 100%;
     text-align: center;
     border-radius: 15px;
+    font-size: 30px;
 }
 
-.content
+main
 {
     float:left;
     width: 700px;
@@ -85,7 +89,7 @@ ul
     padding: 25px;
 }
 
-#left
+.left
 {
     float: left;
     min-width: 75%;
@@ -94,7 +98,7 @@ ul
     margin:0 auto;
 }
 
-#right
+aside
 {
     float: left;
     width: 200px;
@@ -102,7 +106,7 @@ ul
     margin-top:20px;
 }
 
-#footer
+footer
 {
     width: 100%;
     background:black;
@@ -163,25 +167,19 @@ p
 {
     margin: 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .map-container
 {
     background: white;
     padding: 10px;
-    margin-top: 40px;
 }
 
 iframe
 {
     width: 100%;
-    pading:20px 20px;
-}
-
-#map
-{
-    width: 100%;
+    padding:20px 20px;
 }
 
 ul.legend >li
@@ -191,6 +189,6 @@ ul.legend >li
 }
 
 ul.list > li
-{
-    padding:10px;
+{   
+    text-align: left;
 }
