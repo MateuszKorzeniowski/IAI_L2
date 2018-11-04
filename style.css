@@ -192,3 +192,26 @@ ul.list > li
 {   
     text-align: left;
 }
+
+.myButton
+{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 99;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background-color: #50453E;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.myButton:hover 
+{
+    background-color: #40342D;
+}

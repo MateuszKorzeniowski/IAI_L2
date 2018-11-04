@@ -18,20 +18,23 @@
         </nav>
 
         <div class="left">
-            <form>
+            <form id="form">
                 <fieldset>
                 <legend>Uzupełnij Dane:</legend>
                 <div class="form-group">
                     <label for="name">Imie:</label>
                     <input type="text" class="form-control" id="name" placeholder="Podaj Imie">
+                    <div id="iname"></div>
                 </div>
                 <div class="form-group">
                     <label for="surname">Nazwisko:</label>
                     <input type="text" class="form-control" id="surname" placeholder="Podaj Nazwisko">
+                    <div id="isurname"></div>
                 </div>
                 <div class="form-group">
-                    <label for="e-mail">E-Mail:</label>
-                    <input type="e-mail" class="form-control" id="e-mail" placeholder="Podaj E-Mail">
+                    <label for="email">E-Mail:</label>
+                    <input type="e-mail" class="form-control" id="email" placeholder="Podaj E-Mail">
+                    <div id="iemail"></div>
                 </div>
 
                 <div class="form-check form-check-inline">
@@ -42,16 +45,18 @@
                     <label class="form-check-label" for="inlineRadio1">Mężczyzna</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2 rad" value="option2">
                     <label class="form-check-label" for="inlineRadio2">Kobieta</label>
                 </div>
                 <div class="form-group">
                     <label for="description">Opis</label>
                     <textarea class="form-control" id="description" rows="3"></textarea>
+                    <div id="idescripton"></div>
                 </div>
                 <div class="form-group">
                     <label for="age">Wiek:</label>
                     <input type="number" class="form-control" id="age" value="18">
+                    <div id="iage"></div>
                 </div>
                 <div class="form-group col-4">
                     <label for="CivilStatus">StanCywilny</label>
@@ -77,5 +82,9 @@
         </footer>
 
     </div>
+
+<button type="submit" class="btn myButton">UP</button>
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
