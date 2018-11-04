@@ -23,13 +23,13 @@ function checkForm() {
     let iage = document.querySelector("#iage");
     let iname = document.querySelector("#iname");
     let isurname = document.querySelector("#isurname");  
-    let iemail = document.querySelector("#isurname");  
+    let iemail = document.querySelector("#iemail");  
 
 
     let ageValue = age.value;
     let nameValue = name.value;
     let surnameValue = surname.value;
-    let emailValue = surname.value;
+    let emailValue = email.value;
 
     var atpos = emailValue.indexOf("@");
     var dotpos = emailValue.lastIndexOf(".");
