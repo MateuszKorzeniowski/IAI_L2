@@ -12,13 +12,14 @@ function removeClass(element, className) {
 }
 
 
-function checkForm() {
+function checkForm(event) {
 
+    event.preventDefault();
     let age = document.querySelector("#age");
     let name = document.querySelector("#name");
     let surname = document.querySelector("#surname");
     let email = document.querySelector("#email");
-    let checkRadio = document.querySelector(".form-check-input");
+    let checkRadio = document.querySelectorAll(".form-check-input");
 
     let iage = document.querySelector("#iage");
     let iname = document.querySelector("#iname");
@@ -90,15 +91,19 @@ function checkForm() {
         iemail.innerHTML="Looks good!";
     }
 
-    if(checkRadio.checked)
+    if(checkRadio[0].checked || checkRadio[1].checked)
     {
-    	removeClass(checkRadio, 'is-invalid');
-        addClass(checkRadio, 'is-valid');
+    	removeClass(checkRadio[0], 'is-invalid');
+        addClass(checkRadio[0], 'is-valid');
+        removeClass(checkRadio[1], 'is-invalid');
+        addClass(checkRadio[1], 'is-valid');
     }
     else
     {
-    	addClass(checkRadio, 'is-invalid');
-        removeClass(checkRadio, 'is-valid');
+    	addClass(checkRadio[0], 'is-invalid');
+        removeClass(checkRadio[0], 'is-valid');
+        addClass(checkRadio[1], 'is-invalid');
+        removeClass(checkRadio[1], 'is-valid');
     }
 
 }
