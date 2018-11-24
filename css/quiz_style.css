@@ -1,0 +1,142 @@
+body
+{
+	background: #050555;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
+.navbar
+{
+	background: #161666;
+}
+
+.str-button
+{
+	min-height: 200px;
+
+}
+
+.str-button > a
+{
+	text-decoration: none;
+	color:white;
+	border-radius: 50px;
+	margin: 50px auto;
+	padding: 50px;
+	min-height: 250px;
+	font-size: 75px;
+	font-weight: 700;
+	background: #20697E66;
+	transition: all 0.5s ease-in-out;
+}
+
+
+.str-button > a:hover
+{
+	text-decoration: none;
+	cursor: pointer;
+	background: #38B7DB66;
+	font-size: 100px;
+	color: black;
+}
+
+.quiz
+{
+	padding: 30px;
+	font-size: 200px;
+	font-weight: 700;
+	
+}
+
+.container
+{
+	margin: 20px auto;
+	min-width: 500px;
+}
+
+footer
+{
+	background: #0A1F2644;
+	border-radius: 20px;
+	padding: 10px;
+	margin-top:10px;
+}
+
+.list-group
+{
+	color: black;
+}
+
+.question
+{
+	font-size: 50px;
+	font-weight: 700;
+}
+
+ul.score
+{
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.score > li
+{
+    padding: 50px;
+    margin:10px 0;
+    display: inline;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h4.question
+{
+	min-height: 200px;
+	margin-top: 20px;
+}
+
+.list-group-item
+{
+	transition: all 0.2s ease-in-out;
+}
+
+.list-group-item:hover
+{
+	cursor: pointer;
+	background: black;
+	color: white;
+	opacity: 0.7;
+}
+
+.next
+{
+	padding: 10px;
+	min-height: 50px;
+	min-width:150px;
+}
+
+.correct{
+	background: green;
+}
+
+.incorrect{
+	background: red;
+}
+
+.btn-success{
+	position: relative;
+    bottom: 10px;
+    left:0;
+}
+
+.prev{
+	background: #ff0000;
+	border-color: #ff0000;
+}
+.prev:hover{
+	background: #cc0000;
+	border-color: #cc0000;
+}

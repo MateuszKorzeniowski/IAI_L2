@@ -1,6 +1,7 @@
 let nav= '<ul><li><a href="index.html">Strona Główna</a></li>'
     +'<li><a href="map.html">Mapa</a></li>'
-    +'<li><a href="contact.html">Kontakt</a></li></ul>';
+    +'<li><a href="contact.html">Kontakt</a></li>'
+    +'<li><a href="quiz_index.html">Quiz</a></li></ul>';
 
 let divNav=document.querySelector(".navbar");
 
